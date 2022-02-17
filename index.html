@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeTrading</title>
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <meta property="og:site_name" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:title" content='' />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="" />
+    <link rel="icon" type="image/png" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="libs/owlcarousel/assets/owl.carousel.min.css">
+    <link href="libs/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/menu.css">
+    <link href="libs/aos/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="header-logo">
+                <img class="logo" src="./imgs/logo-wetrading.png" alt="">
+                <div class="language">
+                    <img src="./imgs/earth.png" alt="">
+                    <span>EN <i class="ion-arrow-down-b"></i></span>
+                    <div class="language-list">
+                        <ul>
+                            <li><a href="#">VI</a></li>
+                            <li><a href="#">JP</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="account">
+                <div class="account-left">
+                    <div class="profile">
+                        <!-- <img src="" alt="" class="profile-img"> -->
+                        <i class="ion-social-github"></i>
+                        <div class="profile-name">
+                            <p>RETONDARO</p>
+                            <p>Client ID: 10001</p>
+                            <svg class="icon icon-caret-down" id="profile-down">
+                                <use xlink:href="#icon-caret-down"><symbol id="icon-caret-down" viewBox="0 0 16 28">
+                                    <path d="M16 11c0 0.266-0.109 0.516-0.297 0.703l-7 7c-0.187 0.187-0.438 0.297-0.703 0.297s-0.516-0.109-0.703-0.297l-7-7c-0.187-0.187-0.297-0.438-0.297-0.703 0-0.547 0.453-1 1-1h14c0.547 0 1 0.453 1 1z"></path>
+                                    </symbol>
+                                </use>
+                            </svg>
+                            <div class="caret-down">
+                                <ul>
+                                    <li><a href="#">Đăng nhập</a></li>
+                                    <li><a href="#">Đăng xuất</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="account-group">
+                        <div class="account-item"><a href="#">WebTrader</a></div>
+                        <div class="account-item"><a href="#">Deposit Funds</a></div>
+                        <div class="account-item"><a href="#">Withdraw Funds</a></div>
+                    </div>
+                    <div class="account-line"></div>
+                    <div class="account-group">
+                        <div class="account-item">
+                            <img src="./imgs/icon-open-live-account.png" alt="">
+                            <span><a href="#">Open Live Account</a></span>
+                        </div>
+                        <div class="account-item">
+                            <img src="./imgs/icon-open-demo-account.png" alt="">
+                            <span><a href="#">Open Demo Account</a></span>
+                        </div>
+                    </div>
+                    <div class="account-line"></div>
+                    <div class="account-group">
+                        <div class="account-item">
+                            <img src="./imgs/icon-compliance.png" alt="">
+                            <span><a href="#">Compliance</a></span>
+                        </div>
+                        <div class="account-item">
+                            <img src="./imgs/icon-download-center.png" alt="">
+                            <span><a href="#">Download Center</a></span>
+                        </div>
+                        <div class="account-item">
+                            <img src="./imgs/icon-deposit-funds.png" alt="">
+                            <span><a href="#">Deposit Funds</a></span>
+                        </div>
+                        <div class="account-item">
+                            <img src="./imgs/icon-withdraw-funds.png" alt="">
+                            <span><a href="#">Withdraw Funds</a></span>
+                        </div>
+                        <div class="account-item">
+                            <img src="./imgs/icon-services-investigation.png" alt="">
+                            <span><a href="#">Services Investigation</a></span>
+                        </div>
+                        <div class="account-item">
+                            <img src="./imgs/icon-trading-center.png" alt="">
+                            <span><a href="#">Trading Center</a></span>
+                        </div>
+                    </div>
+                    <div class="account-line"></div>
+                    <div class="account-group">
+                        <div class="account-link"><a href="#">Live MT5 Accounts</a></div>
+                        <div class="account-link"><a href="#">Demo MT5 Accounts</a></div>
+                    </div>
+                </div>
+                <div class="account-right">
+                    <div class="account-button-group">
+                        <a href="#" class="btn btn-c">My Accounts</a>
+                        <a href="#" class="btn btn-c">Manage Funds</a>
+                        <a href="#" class="btn btn-c">Open Live Account</a>
+                        <a href="#" class="btn btn-c">Open Demo Account</a>
+                    </div>
+                    <div class="account-title">
+                        <h2>Account Summary</h2>
+                        <div class="account-search">
+                            <input type="search" id="search-inp"/>
+                            <i class="ion-ios-search-strong"></i>
+                        </div>
+                    </div>
+                    <div class="account-table">
+                        <table id="example" class="display" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Position</th>
+                                    <th>Office</th>
+                                    <th>Age</th>
+                                    <th>Start date</th>
+                                    <th>Salary</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tiger Nixon</td>
+                                    <td>System Architect</td>
+                                    <td>Edinburgh</td>
+                                    <td>61</td>
+                                    <td>2011/04/25</td>
+                                    <td>$320,800</td>
+                                </tr>
+                                <tr>
+                                    <td>Garrett Winters</td>
+                                    <td>Accountant</td>
+                                    <td>Tokyo</td>
+                                    <td>63</td>
+                                    <td>2011/07/25</td>
+                                    <td>$170,750</td>
+                                </tr>
+                                <tr>
+                                    <td>Ashton Cox</td>
+                                    <td>Junior Technical Author</td>
+                                    <td>San Francisco</td>
+                                    <td>66</td>
+                                    <td>2009/01/12</td>
+                                    <td>$86,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Cedric Kelly</td>
+                                    <td>Senior Javascript Developer</td>
+                                    <td>Edinburgh</td>
+                                    <td>22</td>
+                                    <td>2012/03/29</td>
+                                    <td>$433,060</td>
+                                </tr>
+                                <tr>
+                                    <td>Airi Satou</td>
+                                    <td>Accountant</td>
+                                    <td>Tokyo</td>
+                                    <td>33</td>
+                                    <td>2008/11/28</td>
+                                    <td>$162,700</td>
+                                </tr>
+                                <tr>
+                                    <td>Brielle Williamson</td>
+                                    <td>Integration Specialist</td>
+                                    <td>New York</td>
+                                    <td>61</td>
+                                    <td>2012/12/02</td>
+                                    <td>$372,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Herrod Chandler</td>
+                                    <td>Sales Assistant</td>
+                                    <td>San Francisco</td>
+                                    <td>59</td>
+                                    <td>2012/08/06</td>
+                                    <td>$137,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Rhona Davidson</td>
+                                    <td>Integration Specialist</td>
+                                    <td>Tokyo</td>
+                                    <td>55</td>
+                                    <td>2010/10/14</td>
+                                    <td>$327,900</td>
+                                </tr>
+                                <tr>
+                                    <td>Colleen Hurst</td>
+                                    <td>Javascript Developer</td>
+                                    <td>San Francisco</td>
+                                    <td>39</td>
+                                    <td>2009/09/15</td>
+                                    <td>$205,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Sonya Frost</td>
+                                    <td>Software Engineer</td>
+                                    <td>Edinburgh</td>
+                                    <td>23</td>
+                                    <td>2008/12/13</td>
+                                    <td>$103,600</td>
+                                </tr>
+                                <tr>
+                                    <td>Jena Gaines</td>
+                                    <td>Office Manager</td>
+                                    <td>London</td>
+                                    <td>30</td>
+                                    <td>2008/12/19</td>
+                                    <td>$90,560</td>
+                                </tr>
+                                <tr>
+                                    <td>Quinn Flynn</td>
+                                    <td>Support Lead</td>
+                                    <td>Edinburgh</td>
+                                    <td>22</td>
+                                    <td>2013/03/03</td>
+                                    <td>$342,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Charde Marshall</td>
+                                    <td>Regional Director</td>
+                                    <td>San Francisco</td>
+                                    <td>36</td>
+                                    <td>2008/10/16</td>
+                                    <td>$470,600</td>
+                                </tr>
+                                <tr>
+                                    <td>Haley Kennedy</td>
+                                    <td>Senior Marketing Designer</td>
+                                    <td>London</td>
+                                    <td>43</td>
+                                    <td>2012/12/18</td>
+                                    <td>$313,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Tatyana Fitzpatrick</td>
+                                    <td>Regional Director</td>
+                                    <td>London</td>
+                                    <td>19</td>
+                                    <td>2010/03/17</td>
+                                    <td>$385,750</td>
+                                </tr>
+                                <tr>
+                                    <td>Michael Silva</td>
+                                    <td>Marketing Designer</td>
+                                    <td>London</td>
+                                    <td>66</td>
+                                    <td>2012/11/27</td>
+                                    <td>$198,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Paul Byrd</td>
+                                    <td>Chief Financial Officer (CFO)</td>
+                                    <td>New York</td>
+                                    <td>64</td>
+                                    <td>2010/06/09</td>
+                                    <td>$725,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Gloria Little</td>
+                                    <td>Systems Administrator</td>
+                                    <td>New York</td>
+                                    <td>59</td>
+                                    <td>2009/04/10</td>
+                                    <td>$237,500</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="account-text">
+                        Please notify us of any errors in any transaction information within 24 hours of trade clousure. After this period, all transactions will be deemed to be correct and ﬁnal and therefore accepted by you.
+                    </div>
+                    <div class="account-we">
+                        <img src="./imgs/we.png" alt="">
+                    </div>
+                </div>    
+            </div>
+            <div class="liquidity-providers">
+                <div class="title-group">
+                    <hr>
+                    <h3>Liquidity providers</h3>
+                </div>
+                <div class="owl-carousel owl-theme owl-carousel_liquidity">
+                    <div class="item">
+                        <a href="#"><img src="./imgs/barclays.png" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="./imgs/citibank.png" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="./imgs/deutsche-bank.png" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="./imgs/barclays.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="title-group">
+                            <hr>
+                            <h3>Contact us</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-us-group">
+                            <div class="contact-us-item">
+                                <div class="contact-us-item__img">
+                                    <img src="./imgs/icon-map.png" alt="">
+                                </div>
+                                <div class="contact-us-item__title">
+                                    <h4>ADDRESS</h4>
+                                    <p>ckacacnancklanclknklacnanckanck ncnaklwj</p>
+                                </div>
+                            </div>
+                            <div class="contact-us-item">
+                                <div class="contact-us-item__img">
+                                    <img src="./imgs/icon-phone.png" alt="">
+                                </div>
+                                <div class="contact-us-item__title">
+                                    <h4>PHONE NUMBER</h4>
+                                    <p>ckacacnancklanclknklacnanckanck ncnaklwj</p>
+                                </div>
+                            </div>
+                            <div class="contact-us-item">
+                                <div class="contact-us-item__img">
+                                    <img src="./imgs/icon-message.png" alt="">
+                                </div>
+                                <div class="contact-us-item__title">
+                                    <h4>EMAIL</h4>
+                                    <p>ckacacnancklanclknklacnanckanck ncnaklwj</p>
+                                </div>
+                            </div>
+                            <div class="contact-us-item">
+                                <div class="contact-us-item__img">
+                                    <img src="./imgs/icon-follow.png" alt="">
+                                </div>
+                                <div class="contact-us-item__title">
+                                    <h4>FOLLOW US 
+                                        <span class="contact-group-icon">
+                                            <a href="#">
+                                                <svg class="icon icon-facebook-official"><use xlink:href="#icon-facebook-official"><symbol id="icon-facebook-official" viewBox="0 0 24 28">
+                                                    <path d="M22.672 2c0.734 0 1.328 0.594 1.328 1.328v21.344c0 0.734-0.594 1.328-1.328 1.328h-6.109v-9.297h3.109l0.469-3.625h-3.578v-2.312c0-1.047 0.281-1.75 1.797-1.75l1.906-0.016v-3.234c-0.328-0.047-1.469-0.141-2.781-0.141-2.766 0-4.672 1.687-4.672 4.781v2.672h-3.125v3.625h3.125v9.297h-11.484c-0.734 0-1.328-0.594-1.328-1.328v-21.344c0-0.734 0.594-1.328 1.328-1.328h21.344z"></path>
+                                                    </symbol></use></svg>
+                                            </a>
+                                            <a href="#">
+                                                <svg class="icon icon-youtube-play"><use xlink:href="#icon-youtube-play">
+                                                    <symbol id="icon-youtube-play" viewBox="0 0 28 28">
+                                                        <path d="M11.109 17.625l7.562-3.906-7.562-3.953v7.859zM14 4.156c5.891 0 9.797 0.281 9.797 0.281 0.547 0.063 1.75 0.063 2.812 1.188 0 0 0.859 0.844 1.109 2.781 0.297 2.266 0.281 4.531 0.281 4.531v2.125s0.016 2.266-0.281 4.531c-0.25 1.922-1.109 2.781-1.109 2.781-1.062 1.109-2.266 1.109-2.812 1.172 0 0-3.906 0.297-9.797 0.297v0c-7.281-0.063-9.516-0.281-9.516-0.281-0.625-0.109-2.031-0.078-3.094-1.188 0 0-0.859-0.859-1.109-2.781-0.297-2.266-0.281-4.531-0.281-4.531v-2.125s-0.016-2.266 0.281-4.531c0.25-1.937 1.109-2.781 1.109-2.781 1.062-1.125 2.266-1.125 2.812-1.188 0 0 3.906-0.281 9.797-0.281v0z"></path>
+                                                        </symbol>
+                                                </use></svg>
+                                            </a>
+                                            <a href="#">
+                                                <svg class="icon icon-twitter"><use xlink:href="#icon-twitter">
+                                                    <symbol id="icon-twitter" viewBox="0 0 26 28">
+                                                        <path d="M25.312 6.375c-0.688 1-1.547 1.891-2.531 2.609 0.016 0.219 0.016 0.438 0.016 0.656 0 6.672-5.078 14.359-14.359 14.359-2.859 0-5.516-0.828-7.75-2.266 0.406 0.047 0.797 0.063 1.219 0.063 2.359 0 4.531-0.797 6.266-2.156-2.219-0.047-4.078-1.5-4.719-3.5 0.313 0.047 0.625 0.078 0.953 0.078 0.453 0 0.906-0.063 1.328-0.172-2.312-0.469-4.047-2.5-4.047-4.953v-0.063c0.672 0.375 1.453 0.609 2.281 0.641-1.359-0.906-2.25-2.453-2.25-4.203 0-0.938 0.25-1.797 0.688-2.547 2.484 3.062 6.219 5.063 10.406 5.281-0.078-0.375-0.125-0.766-0.125-1.156 0-2.781 2.25-5.047 5.047-5.047 1.453 0 2.766 0.609 3.687 1.594 1.141-0.219 2.234-0.641 3.203-1.219-0.375 1.172-1.172 2.156-2.219 2.781 1.016-0.109 2-0.391 2.906-0.781z"></path>
+                                                        </symbol>
+                                                </use></svg>
+                                            </a>
+                                        </span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-us-bg">
+                <img src="./imgs/bg-contactus.png" alt="">
+            </div>
+            <div class="contact-ontop">
+                <a href="#"><img src="./imgs/ontop.png" alt=""></a>
+            </div>
+        </div>
+    </main>
+    <div id="footer">
+        <div class="container">
+            <nav class="navbar">
+                <a class="navbar-brand" href="#"><img src="./imgs/logo-wetrading.png" alt=""></a>
+            
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">WeTrading</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Traders</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Funding</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Support</a>
+                  </li>
+                </ul>
+            </nav>
+            <div class="footer-subcribe">
+                <input type="text" placeholder="Subscribe via email">
+                <button>Sign Up</button>
+            </div>
+            <div class="footer-address">
+                <div class="footer-address-item"><img src="./imgs/icon-message.png" alt=""> vjksnvjnvjsnvjnvsnvjs</div>
+                <div class="footer-address-item"><img src="./imgs/icon-phone.png" alt=""> vjksnvjnvjsnvjnvsnvjs</div>
+                <div class="footer-address-item"><img src="./imgs/icon-map.png" alt=""> vjksnvjnvjsnvjnvsnvjs</div>
+            </div>
+            <div class="footer-content">
+                <p>Risk Warning: Contracts for Difference (‘CFD’) is financial products that enables investors to trade on margin. CFD Trading carries a high degree of risk. It is possible to lose all your capital. These products may not be suitable for everyone and you should ensure that you understand the risks involved. Please think carefully and seek independent expert advice if necessary.</p>
+                <p>Disclaimer: The content of this page is for information purposes only and it is not intended as a recommendation, opinion or advice. We are not financial advisor and all services are provided on an execution only basis. The customer carries the sole responsibility for all the investments that are carried out at Fnory.</p>
+                <p>You need to be 18 years old or legal age as determined by the laws of the country where you live in order to become our client.</p>
+            </div>
+        </div>
+        <div class="footer-final">
+            <div class="container">© 2021 The website is owned and operated by WeTrading.</div>
+        </div>
+    </div>
+    <div>
+
+    <!-- <a href="javascript:void(0)" class="back-to-top"><img src="imgs/go-to-top.png" alt=""></a> -->
+    	
+    </div>
+    <script src="libs/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+    <script src="libs/easing/easing.min.js"></script>
+    <script src="libs/aos/aos.js"></script>
+    <script src="libs/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+            var table = $('#example').DataTable();
+            $('#search-inp').on('keyup',function(){
+                table.search($(this).val()).draw() ;
+            });
+        } );
+    </script>
+</body>
+
+</html>
