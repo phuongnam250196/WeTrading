@@ -92,6 +92,9 @@ $(document).ready(function() {
     $("#profile-down").on("click", function() {
         $(".caret-down").slideToggle();
     })
+    $(".language span").on("click", function() {
+        $(".language-list").slideToggle();
+    })
 });
 
 //refresh animations

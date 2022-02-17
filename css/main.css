@@ -956,6 +956,20 @@ html, body {
   font-size: 14px;
 }
 
+.header-scrolled {
+  /*height: 78px;*/
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  z-index: 998;
+  /*padding: 10px 0;*/
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.03);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.03);
+  top: 0;
+}
+
 #header {
   position: relative;
 }
@@ -988,8 +1002,19 @@ html, body {
   width: 14px;
   margin-right: 4px;
 }
-#header .language:hover .language-list {
-  display: block;
+#header .language span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+#header .language .icon-caret-down {
+  width: 20px;
+  height: 20px;
+  color: #ff8d0a;
 }
 #header .language .language-list {
   position: absolute;
@@ -1096,6 +1121,7 @@ main .account .account-left .profile .caret-down {
   top: 100%;
   right: 0;
   width: calc(100% - 48px);
+  display: none;
 }
 main .account .account-left .profile .caret-down ul {
   list-style: none;
@@ -1290,7 +1316,7 @@ main .account .account-right .account-we img {
 
 .contact-us {
   position: relative;
-  padding: 80px 0 96px;
+  padding: 120px 0 96px;
 }
 .contact-us .container {
   z-index: 9;
@@ -1334,7 +1360,7 @@ main .account .account-right .account-we img {
 .contact-us .contact-us-bg {
   position: absolute;
   left: 0;
-  top: 0;
+  bottom: 0;
   width: 48%;
 }
 .contact-us .contact-us-bg img {
@@ -1344,7 +1370,7 @@ main .account .account-right .account-we img {
 .contact-us .contact-ontop {
   position: absolute;
   left: 47%;
-  bottom: -96px;
+  bottom: -90px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -1495,49 +1521,105 @@ main .account .account-right .account-we img {
   color: #f4f4f2;
 }
 
-.dots_three {
-  line-height: 0;
+.form-grp {
+  margin-bottom: 40px;
+  font-size: 18px;
 }
-.dots_three span {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: #f4f4f2;
-  display: inline-block;
-}
-.dots_three span:first-child {
-  width: 36px;
-  border-radius: 4px;
-}
-.form-gr {
-  margin-bottom: 16px;
-}
-.form-gr label {
+.form-grp label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
-.form-gr .form-ctr {
+.form-grp .form-ctrl {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 20px;
   height: 40px;
   line-height: 40px;
-  padding: 12px;
-  border: 1px solid #f4f4f2;
+  padding: 12px 24px;
+  border: 1px solid #27c66f;
 }
-.form-gr .form-ctr:focus {
+.form-grp .form-ctrl:focus {
   outline: none;
 }
-.form-gr textarea.form-ctr {
+.form-grp textarea.form-ctr {
   height: 100px;
 }
-.form-gr .btn-sbm {
-  background: #f4f4f2;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 4px;
-  color: #fff;
+
+.form-grp-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.form-grp-checkbox .form-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.form-grp-checkbox .form-checkbox input {
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+}
+
+.form-grp-wh {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.form-grp-wh h4 {
+  font-size: 18px;
+  padding-right: 24px;
+}
+.form-grp-wh a {
+  text-decoration: underline;
+  color: #27c66f;
+}
+
+.form-grp-btn {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.form-grp-btn .btn-sbm {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
 }
 
 .hide {
   display: none;
+}
+
+.sign-in .sign-in__title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.sign-in .sign-in__title h2 {
+  color: #27c66f;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.sign-in .sign-in__title p {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+.sign-in .sign-in__title p:last-child {
+  margin-bottom: 0;
+}
+.sign-in .sign-in__content {
+  background: #fff;
+  border-radius: 8px;
+  padding: 80px 72px;
 }
