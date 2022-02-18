@@ -52,19 +52,6 @@ $(document).ready(function() {
         $('#header').addClass('header-scrolled');
     }
 
-
-    var showChar = 80;
-    var ellipsestext = "...";
-    $('.more-80').each(function() {
-        var content = $(this).html();
-        if (content.length > showChar) {
-            var c = content.substr(0, showChar);
-            var html = c + ellipsestext;
-            $(this).html(html);
-        }
-    });
-
-
     $('.owl-carousel_liquidity').owlCarousel({
         loop: true,
         margin: 110,

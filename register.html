@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeTrading-SignIn</title>
+    <title>WeTrading-Register</title>
     <meta content="" name="keywords">
     <meta content="" name="description">
     <meta property="og:site_name" content="" />
@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="libs/owlcarousel/assets/owl.carousel.min.css">
     <link href="libs/aos/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="./libs/intl-tel-input-master/build/css/intlTelInput.min.css">
 </head>
 
 <body>
@@ -49,44 +50,108 @@
     </header>
     <main>
         <div class="container">
-            <div class="sign-in">
-                <div class="row">
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-8">
-                        <div class="sign-in__title">
-                            <h2>Welcome to WeTrading</h2>
-                            <p>We are happy to see you here.</p>
-                            <p>To continue, please enter your login details.</p>
+            <div class="register">
+                <div class="sign-in__title">
+                    <h2>Start trading now!</h2>
+                    <p>Start trading on a live account in less than 5 minutes and</p>
+                    <p>get ready for an exciting trading experience.</p>
+                </div>
+                <div class="sign-in__content">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-grp">
+                                    <label for="">First Name</label>
+                                    <input type="text" class="form-ctrl">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-grp">
+                                    <label for="">Last Name</label>
+                                    <input type="text" class="form-ctrl">
+                                </div>
+                            </div>
                         </div>
-                        <div class="sign-in__content">
-                            <form action="">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-grp">
+                                    <label for="">Date of Birth</label>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <select name="" id="" class="form-ctrl">
+                                                <option value="">Day</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-4">
+                                            <select name="" id="" class="form-ctrl">
+                                                <option value="">Month</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-4">
+                                            <select name="" id="" class="form-ctrl">
+                                                <option value="">Year</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-grp">
+                                    <label for="">Country of Residence</label>
+                                    <select name="" id="" class="form-ctrl">
+                                        <option value="">United Kingdom</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
                                 <div class="form-grp">
                                     <label for="">Email*</label>
                                     <input type="text" class="form-ctrl">
                                 </div>
+                            </div>
+                            <div class="col-lg-6">
                                 <div class="form-grp">
-                                    <label for="">Password</label>
-                                    <input type="password" class="form-ctrl">
+                                    <label for="">Phone number</label>
+                                    <input id="phone" name="phone" type="tel" class="form-ctrl">
                                 </div>
-                                <div class="form-grp-checkbox">
-                                    <div class="form-checkbox">
-                                        <input type="checkbox"> Remember me
-                                    </div>
-                                    <a href="#">Forgotten password</a>
-                                </div>
-                                <div class="form-grp-btn">
-                                    <button class="btn-sbm">
-                                        <img src="./imgs/btn-log-in-me.png" />
-                                    </button>
-                                </div>
-                                <div class="form-grp-wh">
-                                    <h4>Don’t have an account ?</h4>
-                                    <a href="#">Create account now</a>
-                                </div>
-                            </form>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-2"></div>
+                        <div class="row">
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-6">
+                                <div class="form-grp">
+                                    <label for="" style="text-align: center;">Office</label>
+                                    <textarea name="" class="form-ctr" cols="30" rows="10"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-3"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-10">
+                                <div class="form-grp-checkbox">
+                                    <div class="form-checkbox-2">
+                                        <input type="checkbox"> <span> By clicking “Register” below I acknowledge that I have read, fully understand, accept and give my consent to  Term of User as amended from time to time.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-1"></div>
+                        </div>
+                        <div class="form-grp-captcha">
+                            <img src="./imgs/captcha.png" alt="">
+                        </div>
+                        <div class="form-grp-btn">
+                            <button class="btn-sbm">
+                                <img src="./imgs/btn-register.png" />
+                            </button>
+                        </div>
+                        <div class="form-grp-wh">
+                            <h4>Already have an account with Wetrading ?</h4>
+                            <a href="#">Login</a>
+                        </div>
+                    </form>
                 </div>
             </div>
             
@@ -242,6 +307,7 @@
     <script src="libs/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
     <script src="libs/easing/easing.min.js"></script>
+    <script src="./libs/intl-tel-input-master/build/js/intlTelInput.js"></script>
     <script src="libs/aos/aos.js"></script>
     <script src="libs/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
@@ -253,6 +319,32 @@
             });
         } );
     </script>
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+          // allowDropdown: false,
+          // autoHideDialCode: false,
+          // autoPlaceholder: "off",
+          // dropdownContainer: document.body,
+          // excludeCountries: ["us"],
+          // formatOnDisplay: false,
+          // geoIpLookup: function(callback) {
+          //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+          //     var countryCode = (resp && resp.country) ? resp.country : "";
+          //     callback(countryCode);
+          //   });
+          // },
+          // hiddenInput: "full_number",
+          // initialCountry: "auto",
+          // localizedCountries: { 'de': 'Deutschland' },
+          // nationalMode: false,
+          // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+          // placeholderNumberType: "MOBILE",
+          // preferredCountries: ['cn', 'jp'],
+          // separateDialCode: true,
+          utilsScript: "libs/intl-tel-input-master/build/js/utils.js",
+        });
+      </script>
 </body>
 
 </html>
