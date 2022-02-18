@@ -53,8 +53,7 @@
             <div class="account">
                 <div class="account-left">
                     <div class="profile">
-                        <!-- <img src="" alt="" class="profile-img"> -->
-                        <i class="ion-social-github"></i>
+                        <img src="./imgs/avatar-none.png" alt="" class="profile-img">
                         <div class="profile-name">
                             <p>RETONDARO</p>
                             <p>Client ID: 10001</p>
@@ -73,9 +72,18 @@
                         </div>
                     </div>
                     <div class="account-group">
-                        <div class="account-item"><a href="#">WebTrader</a></div>
-                        <div class="account-item"><a href="#">Deposit Funds</a></div>
-                        <div class="account-item"><a href="#">Withdraw Funds</a></div>
+                        <div class="account-item">
+                            <a href="#" class="acount-item-text-mobile">W</a>
+                            <span><a href="#">WebTrader</a></span>
+                        </div>
+                        <div class="account-item">
+                            <a href="#" class="acount-item-text-mobile">D</a>
+                            <span><a href="#">Deposit Funds</a></span>
+                        </div>
+                        <div class="account-item">
+                            <a href="#" class="acount-item-text-mobile">W</a>
+                            <span><a href="#">Withdraw Funds</a></span>
+                        </div>
                     </div>
                     <div class="account-line"></div>
                     <div class="account-group">
@@ -91,11 +99,11 @@
                     <div class="account-line"></div>
                     <div class="account-group">
                         <div class="account-item">
-                            <img src="./imgs/icon-compliance.png" alt="">
+                            <a href="#"><img src="./imgs/icon-compliance.png" alt=""></a>
                             <span><a href="#">Compliance</a></span>
                         </div>
                         <div class="account-item">
-                            <img src="./imgs/icon-download-center.png" alt="">
+                            <a href="#"><img src="./imgs/icon-download-center.png" alt=""></a>
                             <span><a href="#">Download Center</a></span>
                         </div>
                         <div class="account-item">
@@ -117,8 +125,8 @@
                     </div>
                     <div class="account-line"></div>
                     <div class="account-group">
-                        <div class="account-link"><a href="#">Live MT5 Accounts</a></div>
-                        <div class="account-link"><a href="#">Demo MT5 Accounts</a></div>
+                        <div class="account-link"><a href="#">Live <span>MT5 Accounts</span></a></div>
+                        <div class="account-link"><a href="#">Demo <span>MT5 Accounts</span></a></div>
                     </div>
                 </div>
                 <div class="account-right">
@@ -132,7 +140,12 @@
                         <h2>Account Summary</h2>
                         <div class="account-search">
                             <input type="search" id="search-inp"/>
-                            <i class="ion-ios-search-strong"></i>
+                            <svg class="icon icon-search">
+                                <use xlink:href="#icon-search"><symbol id="icon-search" viewBox="0 0 24 24">
+                                    <path d="M9.516 14.016q1.875 0 3.188-1.313t1.313-3.188-1.313-3.188-3.188-1.313-3.188 1.313-1.313 3.188 1.313 3.188 3.188 1.313zM15.516 14.016l4.969 4.969-1.5 1.5-4.969-4.969v-0.797l-0.281-0.281q-1.781 1.547-4.219 1.547-2.719 0-4.617-1.875t-1.898-4.594 1.898-4.617 4.617-1.898 4.594 1.898 1.875 4.617q0 0.984-0.469 2.227t-1.078 1.992l0.281 0.281h0.797z"></path>
+                                    </symbol>
+                                </use>
+                            </svg>
                         </div>
                     </div>
                     <div class="account-table">
@@ -411,7 +424,7 @@
             
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">WeTrading</a>
+                    <a class="nav-link active" href="#">WeTrading</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Traders</a>

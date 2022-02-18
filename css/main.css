@@ -972,6 +972,8 @@ html, body {
 
 #header {
   position: relative;
+  -webkit-box-shadow: 0 4px 2px -2px #ddd;
+          box-shadow: 0 4px 2px -2px #ddd;
 }
 #header .header-logo {
   display: -webkit-box;
@@ -1137,7 +1139,7 @@ main .account .account-left .account-line {
   border-top: 1px dashed #fff;
 }
 main .account .account-left .account-group {
-  padding: 24px 0;
+  padding: 28px 0;
 }
 main .account .account-left .account-group .account-item {
   background: #fff;
@@ -1150,6 +1152,11 @@ main .account .account-left .account-group .account-item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+main .account .account-left .account-group .account-item .acount-item-text-mobile {
+  display: none;
+  font-weight: bold;
+  color: #ff8d0a;
 }
 main .account .account-left .account-group .account-item img {
   padding-right: 8px;
@@ -1169,6 +1176,60 @@ main .account .account-left .account-group .account-link:last-child {
 main .account .account-left .account-group .account-link a {
   color: #fff;
   text-decoration: none;
+}
+@media (max-width: 992.98px) {
+  main .account .account-left {
+    width: 80px;
+    padding: 32px 16px 0 16px;
+  }
+  main .account .account-left .profile .profile-name {
+    display: none;
+  }
+  main .account .account-left .account-group {
+    padding: 28px 0;
+  }
+  main .account .account-left .account-group .account-item {
+    border-radius: 50%;
+    padding: 0;
+    height: 48px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .account .account-left .account-group .account-item .acount-item-text-mobile {
+    display: block;
+  }
+  main .account .account-left .account-group .account-item img {
+    padding-right: 0;
+  }
+  main .account .account-left .account-group .account-item span {
+    display: none;
+  }
+  main .account .account-left .account-group .account-link {
+    margin-bottom: 8px;
+  }
+  main .account .account-left .account-group .account-link:last-child {
+    margin-bottom: 0;
+  }
+  main .account .account-left .account-group .account-link a span {
+    display: none;
+  }
+}
+@media (max-width: 480.98px) {
+  main .account .account-left {
+    width: 52px;
+    padding: 24px 8px 0 8px;
+  }
+  main .account .account-left .profile img {
+    width: 36px;
+    height: 36px;
+  }
+  main .account .account-left .account-group {
+    padding: 28px 0;
+  }
+  main .account .account-left .account-group .account-item {
+    height: 36px;
+  }
 }
 main .account .account-right {
   width: calc(100% - 320px);
@@ -1202,7 +1263,7 @@ main .account .account-right .account-title {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 32px 0 20px;
+  padding: 32px 0 40px;
 }
 main .account .account-right .account-title h2 {
   font-size: 24px;
@@ -1231,6 +1292,19 @@ main .account .account-right .account-title .account-search i {
           transform: translateY(-50%);
   font-size: 20px;
 }
+main .account .account-right .account-title .account-search .icon-search {
+  position: absolute;
+  top: 53%;
+  left: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 18px;
+}
+@media (max-width: 480.98px) {
+  main .account .account-right .account-title h2 {
+    font-size: 18px;
+  }
+}
 main .account .account-right .account-table {
   z-index: 2;
 }
@@ -1239,6 +1313,20 @@ main .account .account-right .account-table #example_length {
 }
 main .account .account-right .account-table #example_filter {
   display: none;
+}
+@media (max-width: 1200.98px) {
+  main .account .account-right .account-table #example tbody th {
+    padding: 6px 4px;
+  }
+  main .account .account-right .account-table #example tbody td {
+    padding: 6px 4px;
+  }
+}
+@media (max-width: 767.98px) {
+  main .account .account-right .account-table > div {
+    overflow: auto;
+    padding-bottom: 16px;
+  }
 }
 main .account .account-right .account-text {
   position: relative;
@@ -1254,12 +1342,44 @@ main .account .account-right .account-we {
 main .account .account-right .account-we img {
   width: 200px;
 }
+@media (max-width: 1200.98px) {
+  main .account .account-right {
+    padding: 32px 20px 20px 20px;
+  }
+  main .account .account-right .account-button-group {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .account .account-right .account-button-group a {
+    width: 49%;
+    margin-bottom: 12px;
+  }
+  main .account .account-right .account-title {
+    padding: 16px 0 20px;
+  }
+}
+@media (max-width: 992.98px) {
+  main .account .account-right {
+    width: calc(100% - 80px);
+    padding: 32px 16px 16px 16px;
+  }
+}
+@media (max-width: 480.98px) {
+  main .account .account-right {
+    width: calc(100% - 52px);
+    padding: 24px 8px 8px 8px;
+  }
+}
 
 .liquidity-providers {
   padding: 80px 0;
 }
 .liquidity-providers .title-group {
   padding-bottom: 60px;
+}
+.liquidity-providers .owl-carousel_liquidity {
+  width: calc(100% - 100px);
+  margin: 0 auto;
 }
 .liquidity-providers .owl-carousel_liquidity .item img {
   width: inherit;
@@ -1278,12 +1398,21 @@ main .account .account-right .account-we img {
   width: 100%;
   z-index: -1;
 }
+.liquidity-providers .owl-carousel_liquidity .owl-nav .owl-prev {
+  margin-left: -32px;
+}
 .liquidity-providers .owl-carousel_liquidity .owl-nav .owl-next {
+  margin-right: -32px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 .liquidity-providers .owl-carousel_liquidity .owl-nav img {
   width: 24px;
+}
+@media (max-width: 420.98px) {
+  .liquidity-providers {
+    padding: 40px 0 20px;
+  }
 }
 
 .title-group {
@@ -1298,9 +1427,19 @@ main .account .account-right .account-we img {
 }
 .title-group h3 {
   font-weight: bold;
-  font-size: 32px;
+  font-size: 42px;
   color: #27c66f;
   padding-top: 12px;
+}
+@media (max-width: 1200.98px) {
+  .title-group h3 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 600.98px) {
+  .title-group h3 {
+    font-size: 20px;
+  }
 }
 
 .form-control {
@@ -1316,7 +1455,7 @@ main .account .account-right .account-we img {
 
 .contact-us {
   position: relative;
-  padding: 120px 0 96px;
+  padding: 180px 0 160px;
 }
 .contact-us .container {
   z-index: 9;
@@ -1331,11 +1470,29 @@ main .account .account-right .account-we img {
 .contact-us .container .title-group h3 {
   color: #fff;
 }
+@media (max-width: 992.98px) {
+  .contact-us .container .title-group {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .contact-us .container .title-group hr {
+    margin: 0 auto;
+    background: #ff8d0a;
+  }
+  .contact-us .container .title-group h3 {
+    color: #27c66f;
+  }
+}
+@media (max-width: 600.98px) {
+  .contact-us .container .title-group h3 {
+    font-size: 20px;
+  }
+}
 .contact-us .container .contact-us-group .contact-us-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 .contact-us .container .contact-us-group .contact-us-item .contact-us-item__img i {
   color: #27c66f;
@@ -1346,7 +1503,7 @@ main .account .account-right .account-we img {
 }
 .contact-us .container .contact-us-group .contact-us-item .contact-us-item__title h4 {
   color: #27c66f;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   margin-bottom: 0;
 }
@@ -1356,6 +1513,26 @@ main .account .account-right .account-we img {
 .contact-us .container .contact-us-group .contact-us-item .contact-us-item__title p {
   font-weight: 500;
   margin-bottom: 0;
+  font-size: 20px;
+}
+@media (max-width: 1200.98px) {
+  .contact-us .container .contact-us-group .contact-us-item .contact-us-item__title h4 {
+    font-size: 16px;
+  }
+  .contact-us .container .contact-us-group .contact-us-item .contact-us-item__title p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 600.98px) {
+  .contact-us .container .contact-us-group .contact-us-item {
+    margin-bottom: 16px;
+  }
+  .contact-us .container .contact-us-group .contact-us-item .contact-us-item__title h4 {
+    font-size: 14px;
+  }
+  .contact-us .container .contact-us-group .contact-us-item .contact-us-item__title p {
+    font-size: 14px;
+  }
 }
 .contact-us .contact-us-bg {
   position: absolute;
@@ -1367,12 +1544,37 @@ main .account .account-right .account-we img {
   width: 100%;
   height: auto;
 }
+@media (max-width: 992.98px) {
+  .contact-us .contact-us-bg {
+    display: none;
+  }
+}
 .contact-us .contact-ontop {
   position: absolute;
   left: 47%;
   bottom: -90px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+@media (max-width: 992.98px) {
+  .contact-us .contact-ontop {
+    width: 60px;
+    bottom: -40px;
+  }
+  .contact-us .contact-ontop img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 1600.98px) {
+  .contact-us {
+    padding: 80px 0 84px;
+  }
+}
+@media (max-width: 1200.98px) {
+  .contact-us {
+    padding: 52px 0 40px;
+  }
 }
 
 #footer {
@@ -1389,7 +1591,7 @@ main .account .account-right .account-we img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 28px;
 }
 #footer .navbar .navbar-nav {
   list-style: none;
@@ -1400,9 +1602,36 @@ main .account .account-right .account-we img {
 #footer .navbar .navbar-nav li a {
   font-weight: bold;
   padding: 12px;
+  font-size: 16px;
+  display: inline-block;
 }
 #footer .navbar .navbar-nav li a:hover {
   color: #ff8d0a;
+}
+#footer .navbar .navbar-nav li a.active {
+  color: #ff8d0a;
+}
+@media (max-width: 992.98px) {
+  #footer .navbar {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #footer .navbar .navbar-nav {
+    padding-top: 12px;
+  }
+}
+@media (max-width: 420.98px) {
+  #footer .navbar {
+    padding-bottom: 8px;
+  }
+  #footer .navbar .navbar-nav li {
+    float: left;
+  }
+  #footer .navbar .navbar-nav li a {
+    font-weight: bold;
+    padding: 12px 8px;
+    font-size: 12px;
+  }
 }
 #footer .footer-subcribe {
   display: -webkit-box;
@@ -1439,7 +1668,8 @@ main .account .account-right .account-we img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 24px 0;
+  padding: 32px 0 40px;
+  font-weight: 500;
 }
 #footer .footer-address .footer-address-item {
   display: -webkit-box;
@@ -1460,8 +1690,22 @@ main .account .account-right .account-we img {
 #footer .footer-address .footer-address-item:last-child {
   width: 45%;
 }
+@media (max-width: 600.98px) {
+  #footer .footer-address {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 24px 0 20px;
+  }
+  #footer .footer-address .footer-address-item {
+    margin-bottom: 12px;
+  }
+  #footer .footer-address .footer-address-item:last-child {
+    width: inherit;
+  }
+}
 #footer .footer-content {
   padding-bottom: 32px;
+  font-weight: 500;
 }
 #footer .footer-content p {
   margin-bottom: 16px;
@@ -1469,9 +1713,21 @@ main .account .account-right .account-we img {
 #footer .footer-content p:last-child {
   margin-bottom: 0;
 }
+@media (max-width: 420.98px) {
+  #footer .footer-content {
+    text-align: justify;
+  }
+}
 #footer .footer-final {
   background: #c4c4c4;
-  padding: 12px 0;
+  padding: 16px 0;
+  font-weight: 500;
+}
+@media (max-width: 420.98px) {
+  #footer .footer-final {
+    font-size: 12px;
+    padding: 12px 0;
+  }
 }
 
 .back-to-top {

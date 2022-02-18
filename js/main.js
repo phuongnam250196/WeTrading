@@ -77,12 +77,19 @@ $(document).ready(function() {
         // autoplayHoverPause:true,
         responsive: {
             0: {
-                items: 2,
-                margin: 10,
-                stagePadding: 10,
+                items: 1,
+                stagePadding: 20,
+                margin: 20,
+            },
+            400: {
+                items: 1,
+                margin: 70,
+                stagePadding: 70,
             },
             600: {
-                items: 3
+                items: 2,
+                margin: 70,
+                stagePadding: 70,
             },
             1000: {
                 items: 3
