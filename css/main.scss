@@ -1797,7 +1797,6 @@ main {
     text-align: center;
     margin-bottom: 40px;
     img {
-        width: 100%;
     }
     @media (max-width: 420.98px) {
         img {
@@ -1847,6 +1846,16 @@ main {
     display: none;
 }
 
+.row {
+    @media (max-width: 568.98px) {
+        margin-left: -4px;
+        margin-right: -4px;
+        &>div {
+            padding-right: 4px;
+            padding-left: 4px;
+        }
+    }
+}
 .sign-in {
     
     .sign-in__title {

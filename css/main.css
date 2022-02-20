@@ -1936,9 +1936,6 @@ main .account .account-right .account-we img {
   text-align: center;
   margin-bottom: 40px;
 }
-.form-grp-captcha img {
-  width: 100%;
-}
 @media (max-width: 420.98px) {
   .form-grp-captcha img {
     width: 100%;
@@ -1995,6 +1992,17 @@ main .account .account-right .account-we img {
 
 .hide {
   display: none;
+}
+
+@media (max-width: 568.98px) {
+  .row {
+    margin-left: -4px;
+    margin-right: -4px;
+  }
+  .row > div {
+    padding-right: 4px;
+    padding-left: 4px;
+  }
 }
 
 .sign-in .sign-in__title, .register .sign-in__title {
