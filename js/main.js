@@ -17,14 +17,6 @@ $(document).ready(function() {
         }
     });
 
-    AOS.init({
-        easing: 'ease',
-        startEvent: 'DOMContentLoaded',
-        disable: function() {
-            var maxWidth = 500;
-            return window.innerWidth < maxWidth;
-        }
-    });
 
 
     $('.back-to-top').click(function() {
@@ -89,24 +81,11 @@ $(document).ready(function() {
     $(".language span").on("click", function() {
         $(".language-list").slideToggle();
     })
-});
 
-//refresh animations
-$(window).on('load', function() {
-    AOS.refresh();
-});
+    var table = $('#example').DataTable();
+    $('#search-inp').on('keyup',function(){
+        table.search($(this).val()).draw() ;
+    });
 
-$(".support__box-li").click(function()  {
-    $(".support__box-li").removeClass("active");
-    $(this).addClass("active");
-    $(".support__box-content>div").removeClass("active");
-    $($(this).data("ref")).addClass("active");
-});
-
-$(".question__item").on("click", function() {
-    $(this).find("i").toggleClass("ion-plus-round");
-    $(this).find("i").toggleClass("ion-minus-round");
     
-    $(this).find(".question__item-content").slideToggle();
-    // console.log($(this));
-})
+});
